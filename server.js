@@ -1,12 +1,16 @@
 'use strict';
-var express      = require('express');
-var http         = require('http');
-var https        = require('https');
-var path         = require('path');
-var bodyParser   = require('body-parser');
-var cookieParser = require('cookie-parser');
+const express      = require('express');
+const http         = require('http');
+const https        = require('https');
+const path         = require('path');
+const bodyParser   = require('body-parser');
+const cookieParser = require('cookie-parser');
 
-var app = express();
+// config
+const config       = require('./config');
+
+// application
+const app          = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -66,6 +70,6 @@ app.post('/test', function(req, res) {
 
 var server = http.createServer(app);
 
-server.listen(8080, function() {
+server.listen(config.get('port') || process.env.PORT || 8080, function() {
   console.log('Connect')
 });
