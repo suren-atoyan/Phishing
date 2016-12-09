@@ -1,0 +1,33 @@
+{
+  "name": "phishing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "figlet": "^1.2.0",
+    "nconf": "^0.8.4",
+    "request": "^2.79.0",
+    "textmagic-rest-client": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurenAt93/Phishing.git"
+  },
+  "keywords": [
+    "phishing"
+  ],
+  "author": "SurenAt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SurenAt93/Phishing/issues"
+  },
+  "homepage": "https://github.com/SurenAt93/Phishing#readme"
+}

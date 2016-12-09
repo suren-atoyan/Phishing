@@ -1,0 +1,108 @@
+@import "reset.css";
+
+html {
+	width: 100%;
+	height: 1048px;
+}
+body {
+	width: 100%;
+	height: 1048px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+body>div {
+	position: absolute;
+	display: block;
+	width: 256px;
+    padding: 12px 16px 16px;
+    border-radius: 0;
+	background-color: #fff;
+	right: 24%;
+	top: 80px;
+}
+.login-registr {
+	padding: 0 12px;
+    font-size: 12px;
+    margin: 0 -16px 16px;
+    line-height: 1.5;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.login-registr li {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	display: inline-block;
+	color: #333;
+	padding: 0 4px 8px;
+	line-height: 18px;
+}
+.login-registr li.active,
+.login-registr li:hover {
+	cursor: pointer;
+	border-bottom: 2px solid #ee8208;
+}
+label {
+	width: 1000%;
+}
+label span {
+	line-height: 18px;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    display: inline-block;
+}
+label input:not([type="checkbox"]){
+	width: 100%;
+    margin: 0;
+    padding: 0 8px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 17px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,.07);
+    font-size: 14px;
+    outline: 0;
+    color: #333;
+}
+.submit input {
+	width: 96px;
+	text-align: center;
+	color: #fff;
+	background-color: #ee8208;
+	border: none;
+	font-size: 15px;
+	border-radius: 3px;
+	height: 32;
+	line-height: 1.8;
+	cursor: pointer;
+	margin-right: 10px;
+
+}
+.remember-me {
+	font-size: 13px;
+	display: inline-block;
+	vertical-align: 2px;
+}
+.forgot-pswd {
+	font-size: 13px;
+	color: #777;
+}
+.forgot-pswd:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+label input:first-of-type {
+	margin-bottom: 15px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border-color: #999;
+}
