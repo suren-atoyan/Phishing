@@ -41,9 +41,9 @@ Create account on "nexmo.com" and get "api_key" and "api_secret"
 Then open "server.js" file and put this values in 24 and 25 lines
 
 ```
-23. var data = JSON.stringify({
-24.    api_key: '********',
-25.    api_secret: '*************',
+27. var data = JSON.stringify({
+28.    api_key: '********',
+29.    api_secret: '*************',
        .... 
 ```
 
@@ -55,7 +55,7 @@ We are using ngrok to create secure tunnels to localhost
 
 ```
 sudo npm i -g ngrok
-ngrok 8080
+ngrok http 8080
 ```
 In output ngrok gives you two urls for http:// and https://. These urls you can use as Phishing urls.
 
