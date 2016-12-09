@@ -9,6 +9,7 @@
     "express": "^4.14.0",
     "figlet": "^1.2.0",
     "nconf": "^0.8.4",
+    "node-fetch": "^1.6.3",
     "request": "^2.79.0",
     "textmagic-rest-client": "^0.0.5"
   },

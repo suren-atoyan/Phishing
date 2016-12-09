@@ -9,9 +9,11 @@
       "from": "Matador"
     },
 
+    "host": "rest.nexmo.com",
+    
+    "path": "/sms/json",
+
     "options": {
-      "host": "rest.nexmo.com",
-      "path": "/sms/json",
       "port": 443,
       "method": "POST",
       "headers": {

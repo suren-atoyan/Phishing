@@ -1,5 +1,6 @@
 const config = require('../config');
 const https = require('https');
+const fetch = require('node-fetch');
 
 module.exports = {
   send(text) {
@@ -16,24 +17,26 @@ module.exports = {
 
     options.headers['Content-Length'] = Buffer.byteLength(data);
 
-    this.smsRequest(data, options);
+    let url = 'https://' +
+              smsGetwayInfo.host +
+              smsGetwayInfo.path;
+
+    options.body = data;
+
+    this.smsRequest(url, options);
   },
 
-  smsRequest(data, options) {
-    let req = https.request(options);
+  smsRequest(url, options) {
 
-    req.write(data);
-    req.end();
+    fetch(url , options)
+      .then(
+        function(res) {
+          console.log('Log ::: SMS successfully sent');
+        },
 
-    let responseData = '';
-    req.on('response', function(res){
-     res.on('data', function(chunk){
-       responseData += chunk;
-     });
-
-     res.on('end', function(){
-       console.log(JSON.parse(responseData));
-     });
-    });
+        function(rej) {
+          console.error('Error ', rej);
+        }
+      );
   }
 }
