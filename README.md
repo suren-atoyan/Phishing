@@ -49,7 +49,7 @@ Then open "server.js" file and put this values in 24 and 25 lines
 
 #### Cerate tunnel to localhost
 
-We use ngrok for create secure tunnels to localhost
+We are using ngrok to create secure tunnels to localhost
 
 ##### Install and use ngrok
 
@@ -57,9 +57,9 @@ We use ngrok for create secure tunnels to localhost
 sudo npm i -g ngrok
 ngrok 8080
 ```
-In output ngrok give to urls for http:// and https://. This urls you can use for Phishing.
+In output ngrok gives you two urls for http:// and https://. These urls you can use as Phishing urls.
 
-* You can set any port, but remember  that your server should be run in this port.
+* You can set any port, but remember  that your server should be run on the same port.
 
 #### And finally ::: Run your local server
 
