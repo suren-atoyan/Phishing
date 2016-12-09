@@ -1,3 +1,22 @@
 {
-	"port": "8080"
+  "port": "8080",
+
+  "smsgetway": {
+    "data": {
+      "api_key": "4491cea3",
+      "api_secret": "3f894740395a6c5f",
+      "to": "37477071163",
+      "from": "Matador"
+    },
+
+    "options": {
+      "host": "rest.nexmo.com",
+      "path": "/sms/json",
+      "port": 443,
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
 }

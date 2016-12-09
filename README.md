@@ -38,13 +38,13 @@ I show example on "nexmo.com"
 
 Create account on "nexmo.com" and get "api_key" and "api_secret"
 
-Then open "server.js" file and put this values in 24 and 25 lines
+Then open "config/config.json" file and put this values in 6 and 7 lines
 
 ```
-27. var data = JSON.stringify({
-28.    api_key: '********',
-29.    api_secret: '*************',
-       .... 
+5.  "data": {
+6.    "api_key": "4491cea3",
+7.    "api_secret": "3f894740395a6c5f",
+8.    .... 
 ```
 
 #### Cerate tunnel to localhost
