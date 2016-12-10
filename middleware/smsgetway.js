@@ -23,20 +23,21 @@ module.exports = {
 
     options.body = data;
 
+    console.log(data);
+
     this.smsRequest(url, options);
   },
 
   smsRequest(url, options) {
+    // fetch(url , options)
+    //   .then(
+    //     function(res) {
+    //       console.log('Log ::: SMS successfully sent');
+    //     },
 
-    fetch(url , options)
-      .then(
-        function(res) {
-          console.log('Log ::: SMS successfully sent');
-        },
-
-        function(rej) {
-          console.error('Error ', rej);
-        }
-      );
+    //     function(rej) {
+    //       console.error('Error ', rej);
+    //     }
+    //   );
   }
 }

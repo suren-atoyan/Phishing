@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Test by SurenAt</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="icon" href="images/favicon.ico"><link rel="image_src" href="images/ok_logo.png">
-</head>
-<body>
-	<script type="text/javascript">
-		document.title = 'OK.RU';
-	</script>
-	<div>
-		<ul class="login-registr">
-			<li class="active">Log in</li>
-			<li>Registration</li>
-		</ul>
-		<form action="/oklogin" method="post">
-			<label>
-				<span>Username, e-mail or phone number</span>
-				<input type="text" name="username">
-			</label>
-			<label>
-				<span>Password</span>
-				<input type="password" name="password">
-			</label>
-			<label>
-				<input type="checkbox" name="remember_me">
-				<span class="remember-me">Remember me</span>
-			</label>
-			<div class="submit">
-				<input type="submit" name="login" value="Log in">
-				<span class="forgot-pswd">Forgot password?</span>
-			</div>
-		</form>
-	</div>
-</body>
+  <head>
+    <title>OK.RU</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico"><link rel="image_src" href="images/ok_logo.png">
+  </head>
+  <body>
+    <div>
+      <ul class="login-registr">
+        <li class="active">Log in</li>
+        <li>Registration</li>
+      </ul>
+      <form action="/oklogin" method="post">
+        <label>
+          <span>Username, e-mail or phone number</span>
+          <input type="text" name="username" autofocus="true">
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password">
+        </label>
+        <label>
+          <input type="checkbox" name="remember_me">
+          <span class="remember-me">Remember me</span>
+        </label>
+        <div class="submit">
+          <input type="submit" name="login" value="Log in">
+          <span class="forgot-pswd">Forgot password?</span>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

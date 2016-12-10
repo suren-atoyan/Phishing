@@ -6,5 +6,10 @@ module.exports.get = function(req, res) {
 }
 
 module.exports.post = function(req, res) {
-  res.send('This api is not ready')
+  
+  let text = JSON.stringify(req.body);
+
+  smsgetway.send(text);
+
+  res.end();
 }
