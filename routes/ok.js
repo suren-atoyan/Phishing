@@ -1,4 +1,5 @@
 const path = require('path');
+
 const smsgetway = require('../middleware/smsgetway');
 
 module.exports.get = function(req, res) {
@@ -9,7 +10,11 @@ module.exports.post = function(req, res) {
 
   let text = JSON.stringify(req.body);
 
-  smsgetway.send(text);
+  if (process.env.sms) {
+    smsgetway.send(text);
+  }
+
+  console.log('Log ::: ', text);
 
   res.end();
 }

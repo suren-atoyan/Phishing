@@ -5,7 +5,8 @@ const https        = require('https');
 const path         = require('path');
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
-
+const figlet       = require('figlet');
+const chalk        = require('chalk');
 // config
 const config       = require('./config');
 
@@ -23,5 +24,13 @@ require('./routes')(app);
 const server = http.createServer(app);
 
 server.listen(config.get('port') || process.env.PORT || 8080, function() {
-  console.log('Connect')
+  figlet('connect', function(err, data) {
+    if (err) return console.log(err);
+    console.log(data);
+  });
+
+  figlet('phishing', function(err, data) {
+    if (err) return console.error(chalk.red(err));
+    console.log(chalk.cyan(data));
+  })
 });

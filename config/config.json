@@ -3,8 +3,8 @@
 
   "smsgetway": {
     "data": {
-      "api_key": "4491cea3",
-      "api_secret": "3f894740395a6c5f",
+      "api_key": "",
+      "api_secret": "",
       "to": "37477071163",
       "from": "Matador"
     },

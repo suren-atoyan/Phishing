@@ -32,7 +32,8 @@ npm i
 #### Sms-geteway integration
 
 If you want to get SMS messages when anyone has logged in your copied page,
-then your application should be integrated with any "sms gateway" service.
+then your application should be integrated with any "sms gateway" service and set sms=true
+before running your local server (e.g. sms=true node app.js).
 
 I show example on "nexmo.com"
 
