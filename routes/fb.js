@@ -16,5 +16,6 @@ module.exports.post = function(req, res) {
 
   console.log('Log ::: ', text);
 
+  res.writeHead(301,{Location: 'http://www.facebook.com'});
   res.end();
 }

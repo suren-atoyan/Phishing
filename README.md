@@ -65,5 +65,5 @@ In output ngrok gives you two urls for http:// and https://. These urls you can 
 #### And finally ::: Run your local server
 
 ```
-node server.js
+node app.js
 ```
